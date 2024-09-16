@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 13:49:31 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/13 16:53:41 by ccastro          ###   ########.fr       */
+/*   Created: 2024/09/13 13:49:28 by ccastro           #+#    #+#             */
+/*   Updated: 2024/09/16 10:27:43 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
 
-int	ft_printf(const char *str, ...)
-{
-	return (0);
-}
+int		ft_printf(const char *str, ...);
+int		ft_putchar(int c);
+char	*ft_putstr(char *s);
+void	ft_putnbr(int n);
+
+#endif

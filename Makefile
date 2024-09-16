@@ -8,7 +8,8 @@ CCFLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-SRC = ft_printf ft_putchar ft_putnbr_hex ft_putnbr ft_putptr ft_putstr
+SRC = ft_putchar.c ft_putnbr.c ft_putstr.c \
+# src/ft_putnbr_hex src/ft_putnbr_hex src/ft_printf
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -21,10 +22,10 @@ $(NAME): $(OBJ)
 	@$(CC) $(CCFLAGS) -c $< -o $@
 
 clean:
-	@$(RM) $(OBJ) $(BONUS_OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
-	@$(RM) $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

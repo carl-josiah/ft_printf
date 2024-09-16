@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 16:09:06 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/13 16:14:48 by ccastro          ###   ########.fr       */
+/*   Created: 2024/09/13 13:49:31 by ccastro           #+#    #+#             */
+/*   Updated: 2024/09/16 10:15:17 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/ft_printf.h"
+#include "ft_printf.h"
 
-char	*ft_putstr(char *s)
+int	ft_printf(const char *str, ...)
 {
-	while (*s)
-		write(1, s++, 1);
-	return (s);
+	return (0);
 }
