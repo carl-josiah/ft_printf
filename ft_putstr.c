@@ -5,16 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 16:09:06 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/16 10:15:40 by ccastro          ###   ########.fr       */
+/*   Created: 2024/09/29 23:27:54 by ccastro           #+#    #+#             */
+/*   Updated: 2024/09/29 23:33:18 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char	*ft_putstr(char *s)
+int	ft_putstr(char *str)
 {
-	while (*s)
-		write(1, s++, 1);
-	return (s);
+	int	count;
+
+	count = 0;
+	while (*str)
+	{
+		write(1, str++, 1);
+		count++;
+	}
+	return (count);
 }

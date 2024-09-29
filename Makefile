@@ -8,8 +8,13 @@ CCFLAGS = -Wall -Wextra -Werror
 
 RM = rm -rf
 
-SRC = ft_putchar.c ft_putnbr.c ft_putstr.c \
-# src/ft_putnbr_hex src/ft_putnbr_hex src/ft_printf
+SRC = ft_printf.c \
+	ft_putchar.c \
+	ft_putnbr.c \
+	ft_putstr.c \
+	ft_putnbr_hex.c \
+	ft_putptr.c \
+	ft_putnbr_uns.c \
 
 OBJ = $(SRC:%.c=%.o)
 

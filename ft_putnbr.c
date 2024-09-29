@@ -5,36 +5,34 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 16:42:44 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/16 10:15:29 by ccastro          ###   ########.fr       */
+/*   Created: 2024/09/29 23:33:11 by ccastro           #+#    #+#             */
+/*   Updated: 2024/09/29 23:52:28 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr(int n)
+int	ft_putnbr(int nbr)
 {
-	if (n == INT_MIN)
+	int	count;
+
+	count = 0;
+	if (nbr == INT_MIN)
 	{
-		ft_putchar('-');
-		ft_putchar('2');
-		n = 147483648;
+		ft_putstr("-2147483648");
+		return (count = 11);
 	}
-	if (n < 0)
+	if (nbr < 0)
 	{
-		ft_putchar('-');
-		n = -n;
+		count += ft_putchar('-');
+		nbr = -nbr;
 	}
-	if (n >= 10)
+	if (nbr > 9)
 	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		count += ft_putnbr(nbr / 10);
+		count += ft_putnbr(nbr % 10);
 	}
 	else
-		ft_putchar(n + '0');
+		count += ft_putchar(nbr + '0');
+	return (count);
 }
-
-// int	main(void)
-// {
-// 	ft_putnbr(INT_MAX);
-// }

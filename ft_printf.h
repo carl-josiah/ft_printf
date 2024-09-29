@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:28 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/16 10:27:43 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/09/30 00:00:53 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@
 # include <stdlib.h>
 # include <limits.h>
 
-int		ft_printf(const char *str, ...);
-int		ft_putchar(int c);
-char	*ft_putstr(char *s);
-void	ft_putnbr(int n);
+int	ft_printf(const char *format, ...);
+int	ft_putchar(int c);
+int	ft_putstr(char *str);
+int	ft_putnbr(int nbr);
+int	ft_putnbr_uns(unsigned int nbr);
+
 
 #endif
