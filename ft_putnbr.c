@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 23:33:11 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/29 23:52:28 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/09/30 11:46:15 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ int	ft_putnbr(int nbr)
 
 	count = 0;
 	if (nbr == INT_MIN)
-	{
-		ft_putstr("-2147483648");
-		return (count = 11);
-	}
+		return (ft_putstr("-2147483648"));
 	if (nbr < 0)
 	{
 		count += ft_putchar('-');

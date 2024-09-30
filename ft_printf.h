@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:28 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/30 00:00:53 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/09/30 11:58:10 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	ft_putchar(int c);
 int	ft_putstr(char *str);
 int	ft_putnbr(int nbr);
 int	ft_putnbr_uns(unsigned int nbr);
-
+int	ft_putnbr_hex(unsigned int nbr, char specifier);
 
 #endif
