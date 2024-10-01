@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:28 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/30 11:58:10 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/01 10:34:48 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 # include <stdarg.h>
 # include <unistd.h>
+# include <stdio.h>
 # include <stdlib.h>
 # include <limits.h>
 

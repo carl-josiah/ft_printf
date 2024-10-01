@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:31 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/30 23:45:02 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/01 10:28:51 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,3 @@ int	ft_printf(const char *format, ...)
 	va_end(ap);
 	return (count);
 }
-
-// int	main(void)
-// {
-	
-// }
