@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:07:40 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/01 11:48:53 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/01 22:04:18 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ int	ft_putnbr_hex(unsigned int nbr, char specifier)
 // {
 // 	int	count;
 
-// 	count = ft_putnbr_hex(UINT_MAX, 'X');
+// 	count = ft_putnbr_hex(123, 'X');
 // 	printf("\ncount %d\n", count);
 // }
