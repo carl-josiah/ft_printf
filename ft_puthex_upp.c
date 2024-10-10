@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_puthex_upp.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 11:49:52 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/10 16:21:42 by ccastro          ###   ########.fr       */
+/*   Created: 2024/10/10 13:38:19 by ccastro           #+#    #+#             */
+/*   Updated: 2024/10/10 16:19:45 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	static	hex_low(unsigned long nbr)
+int	ft_puthex_upp(unsigned int nbr)
 {
 	int	count;
 
 	count = 0;
 	if (nbr >= 16)
-		hex_low(nbr / 16);
-	count += ft_putchar("0123456789abcdef"[nbr % 16]);
-	return (count);
-}
-
-int	ft_putptr(unsigned long nbr)
-{
-	int	count;
-
-	count = 0;
-	ft_putstr("0x");
-	hex_low(nbr);
+		ft_puthex_upp(nbr / 16);
+	count += ft_putchar("0123456789ABCDEF"[nbr % 16]);
 	return (count);
 }
