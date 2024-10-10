@@ -12,7 +12,8 @@ SRC = ft_printf.c \
 	ft_putchar.c \
 	ft_putnbr.c \
 	ft_putstr.c \
-	ft_putnbr_hex.c \
+	ft_puthex_low.c \
+	ft_puthex_upp.c \
 	ft_putptr.c \
 	ft_putnbr_uns.c \
 

@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:31 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/10 16:40:15 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/10 16:48:35 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	print_format(char specifier, va_list ap)
 		count += ft_puthex_low(va_arg(ap, unsigned int));
 	if (specifier == 'X')
 		count += ft_puthex_upp(va_arg(ap, unsigned int));
+	if (specifier == '%')
+		write(1, "&", 1);
 	return (count);
 }
 
@@ -55,7 +57,7 @@ int	ft_printf(const char *format, ...)
 
 int	main(void)
 {
-	ft_printf("Hello");
+	ft_printf("Hello %s! I am %d years old :(\n", "Carl", 50);
 }
 // int	format_specifier(char specifier, va_list ap)
 // {
