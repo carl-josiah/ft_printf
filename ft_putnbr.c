@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 23:33:11 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/10 16:57:01 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/10 16:58:43 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ int	ft_putnbr(int nbr)
 	return (count);
 }
 
-int	main(void)
-{
-	int	count;
+// int	main(void)
+// {
+// 	int	count;
 
-	count = ft_putnbr(100);
-	printf("\ncount %d\n", count);
-}
+// 	count = ft_putnbr(100);
+// 	printf("\ncount %d\n", count);
+// }

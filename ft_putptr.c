@@ -6,13 +6,13 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:49:52 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/10 16:21:42 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/10 17:01:46 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	static	hex_low(unsigned long nbr)
+int static	hex_low(unsigned long nbr)
 {
 	int	count;
 

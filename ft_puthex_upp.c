@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:38:19 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/10 16:57:44 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/10 16:58:36 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	ft_puthex_upp(unsigned int nbr)
 	return (count);
 }
 
-int	main(void)
-{
-	int	count;
+// int	main(void)
+// {
+// 	int	count;
 
-	count = ft_puthex_upp(255);
-	printf("\nthe count is %d\n", count);
-}
+// 	count = ft_puthex_upp(255);
+// 	printf("\nthe count is %d\n", count);
+// }
