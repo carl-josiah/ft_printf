@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 13:49:31 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/11 15:02:07 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/11 16:07:22 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,19 @@ int	ft_printf(const char *format, ...)
 {
 	int		count;
 	va_list	ap;
-
+	int tmp;
 	va_start(ap, format);
 	count = 0;
 	while (*format)
 	{
+		// tmp = count;
 		if (*format == '%')
 		{
-			count += format_specification(ap, *(++format));
-			if (count == -1)
+			tmp =  format_specification(ap, *(++format));
+			if (tmp == -1)
 				return (-1);
+			// count += format_specification(ap, *(++format));
+			count += tmp;
 		}
 		else
 		{
