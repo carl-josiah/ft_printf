@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 23:52:40 by ccastro           #+#    #+#             */
-/*   Updated: 2024/09/30 11:47:05 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/11 14:26:06 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 int	ft_putnbr_uns(unsigned int nbr)
 {
 	int	count;
+	int	out;
 
 	count = 0;
-	if (nbr > 9)
-	{
+	if (nbr >= 10)
 		count += ft_putnbr_uns(nbr / 10);
-		count += ft_putnbr_uns(nbr % 10);
-	}
-	else
-		count += ft_putchar(nbr + '0');
+	out = (nbr % 10) + '0';
+	if (write(1, &out, 1) == -1)
+		return (-1);
+	++count;
 	return (count);
 }

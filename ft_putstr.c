@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 23:27:54 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/11 11:15:59 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/11 14:12:02 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ int	ft_putstr(char *str)
 	if (str == NULL)
 		return (write(1, "(null)", 6));
 	while (*str)
-		count += write(1, str++, 1);
+	{
+		if (write(1, str++, 1) == -1)
+			return (-1);
+		++count;
+	}
 	return (count);
 }

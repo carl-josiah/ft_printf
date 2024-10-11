@@ -6,7 +6,7 @@
 /*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 23:26:43 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/11 11:16:12 by ccastro          ###   ########.fr       */
+/*   Updated: 2024/10/11 14:11:00 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 int	ft_putchar(int c)
 {
-	int	count;
-
-	count = 0;
-	count += write(1, &c, 1);
-	return (count);
+	return (write(1, &c, 1));
 }
