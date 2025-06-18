@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccastro <ccastro@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*   By: ccastro <ccastro@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:49:52 by ccastro           #+#    #+#             */
-/*   Updated: 2024/10/11 14:55:51 by ccastro          ###   ########.fr       */
+/*   Updated: 2025/06/18 06:08:26 by ccastro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	static	ul_to_hex(unsigned long nbr)
+static int	ul_to_hex(unsigned long nbr)
 {
 	int	count;
 
